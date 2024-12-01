@@ -166,7 +166,7 @@ def first():
         message.attach(part2)
         with smtplib.SMTP_SSL("mail.waterworldwaterpark.com", 465) as server:
             server.login(sender_email, password)
-            server.sendmail(sender_email, receiver_email, message.as_string())
+            server.sendmail(sender_emaill, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
 
 
@@ -204,7 +204,7 @@ def second():
         message.attach(part2)
         with smtplib.SMTP_SSL("mail.waterworldwaterpark.com", 465) as server:
             server.login(sender_email, password)
-            server.sendmail(sender_email, receiver_email, message.as_string())
+            server.sendmail(sender_emaill, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
 
 
